@@ -6,15 +6,20 @@ import Contact from "./Components/Contact";
 import Portfolio from "./Components/Portfolio";
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
+import ErrorPage from "./Components/ErrorPage";
+
 export default function App() {
   return (
     <>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Navbar />}></Route>
-          <Route exact path="/" element={<Home />}></Route>
-          <Route path="/portfolio" element={<Portfolio />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/" element={<Navbar />}>
+            <Route exact path="/" element={<Home />}></Route>
+            <Route path="/portfolio" element={<Portfolio />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
+          </Route>
+          <Route element={<ErrorPage />}></Route>
         </Routes>
         HI
       </div>

@@ -1,9 +1,11 @@
-export default function About() {
+export default function Contact() {
   return (
     <>
-      <h1>I'm Nam, I'm awesome</h1>
-
-      <img src="./public/myhoneylove.jpg" alt="Mr. Nam Nguyen" id="myNam"></img>
+      <form>
+        <input type="text" />
+        Send me a message!
+        <button type="submit"></button>
+      </form>
     </>
   );
 }
