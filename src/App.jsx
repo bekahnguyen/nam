@@ -19,9 +19,8 @@ export default function App() {
             <Route path="/about" element={<About />}></Route>
             <Route path="/contact" element={<Contact />}></Route>
           </Route>
-          <Route element={<ErrorPage />}></Route>
+          <Route path="*" element={<ErrorPage />}></Route>
         </Routes>
-        HI
       </div>
     </>
   );

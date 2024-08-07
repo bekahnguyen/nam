@@ -62,7 +62,11 @@ export default function About() {
       <p>Those who know me say I'm {loveWord[random]}</p>
       <h1>I'm Nam, I'm awesome</h1>
 
-      <img src="./public/myhoneylove.jpg" alt="Mr. Nam Nguyen" id="myNam"></img>
+      <img
+        src="../assets/myhoneylove.jpg"
+        alt="Mr. Nam Nguyen"
+        id="myNam"
+      ></img>
     </>
   );
 }
